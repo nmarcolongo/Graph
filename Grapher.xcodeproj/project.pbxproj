@@ -1,0 +1,575 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C3173C0E1948AA5D002B3E81 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3173C0D1948AA5D002B3E81 /* Foundation.framework */; };
+		C3173C101948AA5D002B3E81 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3173C0F1948AA5D002B3E81 /* CoreGraphics.framework */; };
+		C3173C121948AA5D002B3E81 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3173C111948AA5D002B3E81 /* UIKit.framework */; };
+		C3173C181948AA5D002B3E81 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C3173C161948AA5D002B3E81 /* InfoPlist.strings */; };
+		C3173C1A1948AA5D002B3E81 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C3173C191948AA5D002B3E81 /* main.m */; };
+		C3173C1E1948AA5D002B3E81 /* GAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C3173C1D1948AA5D002B3E81 /* GAppDelegate.m */; };
+		C3173C201948AA5D002B3E81 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3173C1F1948AA5D002B3E81 /* Images.xcassets */; };
+		C3173C271948AA5D002B3E81 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3173C261948AA5D002B3E81 /* XCTest.framework */; };
+		C3173C281948AA5D002B3E81 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3173C0D1948AA5D002B3E81 /* Foundation.framework */; };
+		C3173C291948AA5D002B3E81 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3173C111948AA5D002B3E81 /* UIKit.framework */; };
+		C3173C311948AA5D002B3E81 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C3173C2F1948AA5D002B3E81 /* InfoPlist.strings */; };
+		C3173C331948AA5D002B3E81 /* GrapherTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C3173C321948AA5D002B3E81 /* GrapherTests.m */; };
+		C3173C461948C9AD002B3E81 /* libCorePlot-CocoaTouch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C3173C431948BE8F002B3E81 /* libCorePlot-CocoaTouch.a */; };
+		C3173C921949F16C002B3E81 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3173C911949F16C002B3E81 /* MainStoryboard.storyboard */; };
+		C3173C951949F18F002B3E81 /* GViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3173C941949F18F002B3E81 /* GViewController.m */; };
+		C3FC5FB5194B4F6F0063316D /* GEquationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3FC5FB4194B4F6F0063316D /* GEquationsViewController.m */; };
+		C3FC5FBA194B4FA20063316D /* GSetupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3FC5FB9194B4FA20063316D /* GSetupViewController.m */; };
+		C3FC5FBD194B4FB50063316D /* GGraphViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3FC5FBC194B4FB50063316D /* GGraphViewController.m */; };
+		C3FC5FC1194B8DBC0063316D /* GBrain.m in Sources */ = {isa = PBXBuildFile; fileRef = C3FC5FC0194B8DBC0063316D /* GBrain.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C3173C2A1948AA5D002B3E81 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C3173C021948AA5D002B3E81 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C3173C091948AA5D002B3E81;
+			remoteInfo = Grapher;
+		};
+		C3173C421948BE8F002B3E81 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C3173C3C1948BE8F002B3E81 /* CorePlot-CocoaTouch.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BC9B83470FB8A0A40035D8DA;
+			remoteInfo = "CorePlot-CocoaTouch";
+		};
+		C3173C441948C963002B3E81 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C3173C3C1948BE8F002B3E81 /* CorePlot-CocoaTouch.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BC9B83460FB8A0A40035D8DA;
+			remoteInfo = "CorePlot-CocoaTouch";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C3173C0A1948AA5D002B3E81 /* Grapher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Grapher.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3173C0D1948AA5D002B3E81 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C3173C0F1948AA5D002B3E81 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C3173C111948AA5D002B3E81 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C3173C151948AA5D002B3E81 /* Grapher-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Grapher-Info.plist"; sourceTree = "<group>"; };
+		C3173C171948AA5D002B3E81 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C3173C191948AA5D002B3E81 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C3173C1B1948AA5D002B3E81 /* Grapher-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Grapher-Prefix.pch"; sourceTree = "<group>"; };
+		C3173C1C1948AA5D002B3E81 /* GAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GAppDelegate.h; sourceTree = "<group>"; };
+		C3173C1D1948AA5D002B3E81 /* GAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GAppDelegate.m; sourceTree = "<group>"; };
+		C3173C1F1948AA5D002B3E81 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C3173C251948AA5D002B3E81 /* GrapherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GrapherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3173C261948AA5D002B3E81 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		C3173C2E1948AA5D002B3E81 /* GrapherTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GrapherTests-Info.plist"; sourceTree = "<group>"; };
+		C3173C301948AA5D002B3E81 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C3173C321948AA5D002B3E81 /* GrapherTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GrapherTests.m; sourceTree = "<group>"; };
+		C3173C3C1948BE8F002B3E81 /* CorePlot-CocoaTouch.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "CorePlot-CocoaTouch.xcodeproj"; path = "../../Downloads/core-plot-master/framework/CorePlot-CocoaTouch.xcodeproj"; sourceTree = "<group>"; };
+		C3173C911949F16C002B3E81 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
+		C3173C931949F18F002B3E81 /* GViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GViewController.h; sourceTree = "<group>"; };
+		C3173C941949F18F002B3E81 /* GViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GViewController.m; sourceTree = "<group>"; };
+		C3FC5FB3194B4F6F0063316D /* GEquationsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GEquationsViewController.h; sourceTree = "<group>"; };
+		C3FC5FB4194B4F6F0063316D /* GEquationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GEquationsViewController.m; sourceTree = "<group>"; };
+		C3FC5FB8194B4FA20063316D /* GSetupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSetupViewController.h; sourceTree = "<group>"; };
+		C3FC5FB9194B4FA20063316D /* GSetupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSetupViewController.m; sourceTree = "<group>"; };
+		C3FC5FBB194B4FB50063316D /* GGraphViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGraphViewController.h; sourceTree = "<group>"; };
+		C3FC5FBC194B4FB50063316D /* GGraphViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGraphViewController.m; sourceTree = "<group>"; };
+		C3FC5FBF194B8DBC0063316D /* GBrain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBrain.h; sourceTree = "<group>"; };
+		C3FC5FC0194B8DBC0063316D /* GBrain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBrain.m; sourceTree = "<group>"; };
+		C3FC5FC4194B92F60063316D /* README for Docs Install.md */ = {isa = PBXFileReference; lastKnownFileType = text; name = "README for Docs Install.md"; path = "core-plot-master/READMEs/README for Docs Install.md"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C3173C071948AA5D002B3E81 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3173C101948AA5D002B3E81 /* CoreGraphics.framework in Frameworks */,
+				C3173C121948AA5D002B3E81 /* UIKit.framework in Frameworks */,
+				C3173C0E1948AA5D002B3E81 /* Foundation.framework in Frameworks */,
+				C3173C461948C9AD002B3E81 /* libCorePlot-CocoaTouch.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3173C221948AA5D002B3E81 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3173C271948AA5D002B3E81 /* XCTest.framework in Frameworks */,
+				C3173C291948AA5D002B3E81 /* UIKit.framework in Frameworks */,
+				C3173C281948AA5D002B3E81 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C3173C011948AA5D002B3E81 = {
+			isa = PBXGroup;
+			children = (
+				C3173C131948AA5D002B3E81 /* Grapher */,
+				C3173C2C1948AA5D002B3E81 /* GrapherTests */,
+				C3173C0C1948AA5D002B3E81 /* Frameworks */,
+				C3173C0B1948AA5D002B3E81 /* Products */,
+				C3173C3C1948BE8F002B3E81 /* CorePlot-CocoaTouch.xcodeproj */,
+			);
+			sourceTree = "<group>";
+		};
+		C3173C0B1948AA5D002B3E81 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C3173C0A1948AA5D002B3E81 /* Grapher.app */,
+				C3173C251948AA5D002B3E81 /* GrapherTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C3173C0C1948AA5D002B3E81 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C3FC5FC4194B92F60063316D /* README for Docs Install.md */,
+				C3173C0D1948AA5D002B3E81 /* Foundation.framework */,
+				C3173C0F1948AA5D002B3E81 /* CoreGraphics.framework */,
+				C3173C111948AA5D002B3E81 /* UIKit.framework */,
+				C3173C261948AA5D002B3E81 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C3173C131948AA5D002B3E81 /* Grapher */ = {
+			isa = PBXGroup;
+			children = (
+				C3173C901949F14A002B3E81 /* Model */,
+				C3173C8F1949F13E002B3E81 /* View Controllers */,
+				C3173C1F1948AA5D002B3E81 /* Images.xcassets */,
+				C3173C8E1949F12C002B3E81 /* Interface */,
+				C3173C8D1949F108002B3E81 /* App Dele */,
+				C3173C141948AA5D002B3E81 /* Supporting Files */,
+			);
+			path = Grapher;
+			sourceTree = "<group>";
+		};
+		C3173C141948AA5D002B3E81 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C3173C151948AA5D002B3E81 /* Grapher-Info.plist */,
+				C3173C161948AA5D002B3E81 /* InfoPlist.strings */,
+				C3173C191948AA5D002B3E81 /* main.m */,
+				C3173C1B1948AA5D002B3E81 /* Grapher-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C3173C2C1948AA5D002B3E81 /* GrapherTests */ = {
+			isa = PBXGroup;
+			children = (
+				C3173C321948AA5D002B3E81 /* GrapherTests.m */,
+				C3173C2D1948AA5D002B3E81 /* Supporting Files */,
+			);
+			path = GrapherTests;
+			sourceTree = "<group>";
+		};
+		C3173C2D1948AA5D002B3E81 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C3173C2E1948AA5D002B3E81 /* GrapherTests-Info.plist */,
+				C3173C2F1948AA5D002B3E81 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C3173C3D1948BE8F002B3E81 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C3173C431948BE8F002B3E81 /* libCorePlot-CocoaTouch.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C3173C8D1949F108002B3E81 /* App Dele */ = {
+			isa = PBXGroup;
+			children = (
+				C3173C1D1948AA5D002B3E81 /* GAppDelegate.m */,
+				C3173C1C1948AA5D002B3E81 /* GAppDelegate.h */,
+			);
+			name = "App Dele";
+			sourceTree = "<group>";
+		};
+		C3173C8E1949F12C002B3E81 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				C3173C911949F16C002B3E81 /* MainStoryboard.storyboard */,
+			);
+			name = Interface;
+			sourceTree = "<group>";
+		};
+		C3173C8F1949F13E002B3E81 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C3173C931949F18F002B3E81 /* GViewController.h */,
+				C3173C941949F18F002B3E81 /* GViewController.m */,
+				C3FC5FB3194B4F6F0063316D /* GEquationsViewController.h */,
+				C3FC5FB4194B4F6F0063316D /* GEquationsViewController.m */,
+				C3FC5FB8194B4FA20063316D /* GSetupViewController.h */,
+				C3FC5FB9194B4FA20063316D /* GSetupViewController.m */,
+				C3FC5FBB194B4FB50063316D /* GGraphViewController.h */,
+				C3FC5FBC194B4FB50063316D /* GGraphViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		C3173C901949F14A002B3E81 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C3FC5FBF194B8DBC0063316D /* GBrain.h */,
+				C3FC5FC0194B8DBC0063316D /* GBrain.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C3173C091948AA5D002B3E81 /* Grapher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3173C361948AA5D002B3E81 /* Build configuration list for PBXNativeTarget "Grapher" */;
+			buildPhases = (
+				C3173C061948AA5D002B3E81 /* Sources */,
+				C3173C071948AA5D002B3E81 /* Frameworks */,
+				C3173C081948AA5D002B3E81 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C3173C451948C963002B3E81 /* PBXTargetDependency */,
+			);
+			name = Grapher;
+			productName = Grapher;
+			productReference = C3173C0A1948AA5D002B3E81 /* Grapher.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C3173C241948AA5D002B3E81 /* GrapherTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3173C391948AA5D002B3E81 /* Build configuration list for PBXNativeTarget "GrapherTests" */;
+			buildPhases = (
+				C3173C211948AA5D002B3E81 /* Sources */,
+				C3173C221948AA5D002B3E81 /* Frameworks */,
+				C3173C231948AA5D002B3E81 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C3173C2B1948AA5D002B3E81 /* PBXTargetDependency */,
+			);
+			name = GrapherTests;
+			productName = GrapherTests;
+			productReference = C3173C251948AA5D002B3E81 /* GrapherTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C3173C021948AA5D002B3E81 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = G;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = app.drexel.edu;
+				TargetAttributes = {
+					C3173C241948AA5D002B3E81 = {
+						TestTargetID = C3173C091948AA5D002B3E81;
+					};
+				};
+			};
+			buildConfigurationList = C3173C051948AA5D002B3E81 /* Build configuration list for PBXProject "Grapher" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C3173C011948AA5D002B3E81;
+			productRefGroup = C3173C0B1948AA5D002B3E81 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = C3173C3D1948BE8F002B3E81 /* Products */;
+					ProjectRef = C3173C3C1948BE8F002B3E81 /* CorePlot-CocoaTouch.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				C3173C091948AA5D002B3E81 /* Grapher */,
+				C3173C241948AA5D002B3E81 /* GrapherTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		C3173C431948BE8F002B3E81 /* libCorePlot-CocoaTouch.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libCorePlot-CocoaTouch.a";
+			remoteRef = C3173C421948BE8F002B3E81 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C3173C081948AA5D002B3E81 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3173C921949F16C002B3E81 /* MainStoryboard.storyboard in Resources */,
+				C3173C181948AA5D002B3E81 /* InfoPlist.strings in Resources */,
+				C3173C201948AA5D002B3E81 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3173C231948AA5D002B3E81 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3173C311948AA5D002B3E81 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C3173C061948AA5D002B3E81 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3FC5FB5194B4F6F0063316D /* GEquationsViewController.m in Sources */,
+				C3173C1E1948AA5D002B3E81 /* GAppDelegate.m in Sources */,
+				C3FC5FBA194B4FA20063316D /* GSetupViewController.m in Sources */,
+				C3FC5FC1194B8DBC0063316D /* GBrain.m in Sources */,
+				C3FC5FBD194B4FB50063316D /* GGraphViewController.m in Sources */,
+				C3173C1A1948AA5D002B3E81 /* main.m in Sources */,
+				C3173C951949F18F002B3E81 /* GViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3173C211948AA5D002B3E81 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3173C331948AA5D002B3E81 /* GrapherTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C3173C2B1948AA5D002B3E81 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C3173C091948AA5D002B3E81 /* Grapher */;
+			targetProxy = C3173C2A1948AA5D002B3E81 /* PBXContainerItemProxy */;
+		};
+		C3173C451948C963002B3E81 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "CorePlot-CocoaTouch";
+			targetProxy = C3173C441948C963002B3E81 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C3173C161948AA5D002B3E81 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C3173C171948AA5D002B3E81 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C3173C2F1948AA5D002B3E81 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C3173C301948AA5D002B3E81 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C3173C341948AA5D002B3E81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C3173C351948AA5D002B3E81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C3173C371948AA5D002B3E81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Grapher/Grapher-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"Users/Administrator/Downloads/core-plot-master/framework/CorePlot-CocaTouch.xcodeproj/Frameworks/\"/**";
+				INFOPLIST_FILE = "Grapher/Grapher-Info.plist";
+				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C3173C381948AA5D002B3E81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Grapher/Grapher-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"Users/Administrator/Downloads/core-plot-master/framework/CorePlot-CocaTouch.xcodeproj/Frameworks/\"/**";
+				INFOPLIST_FILE = "Grapher/Grapher-Info.plist";
+				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C3173C3A1948AA5D002B3E81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Grapher.app/Grapher";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Grapher/Grapher-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "GrapherTests/GrapherTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		C3173C3B1948AA5D002B3E81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Grapher.app/Grapher";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Grapher/Grapher-Prefix.pch";
+				INFOPLIST_FILE = "GrapherTests/GrapherTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C3173C051948AA5D002B3E81 /* Build configuration list for PBXProject "Grapher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3173C341948AA5D002B3E81 /* Debug */,
+				C3173C351948AA5D002B3E81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3173C361948AA5D002B3E81 /* Build configuration list for PBXNativeTarget "Grapher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3173C371948AA5D002B3E81 /* Debug */,
+				C3173C381948AA5D002B3E81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3173C391948AA5D002B3E81 /* Build configuration list for PBXNativeTarget "GrapherTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3173C3A1948AA5D002B3E81 /* Debug */,
+				C3173C3B1948AA5D002B3E81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C3173C021948AA5D002B3E81 /* Project object */;
+}
